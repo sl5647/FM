@@ -1,4 +1,4 @@
-name: Spider_FongMi
+name: Spider
 
 on:
   workflow_dispatch:
@@ -36,8 +36,7 @@ jobs:
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SixV.java > app/src/main/java/com/github/catvod/spider/SixV.java
          #curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SP360.java > app/src/main/java/com/github/catvod/spider/SP360.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Nmys.java > app/src/main/java/com/github/catvod/spider/Nmys.java
-         curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Bilitu.java > app/src/main/java/com/github/catvod/spider/Bilitu.java
-         curl -L https://github.com/zhixc/CatVodTVSpider/raw/main/app/src/main/java/com/github/catvod/spider/Voflix.java > app/src/main/java/com/github/catvod/spider/Voflix.java
+         curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Voflix.java > app/src/main/java/com/github/catvod/spider/Voflix.java
          
          
          #简体化阿里云盘
