@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class PanSou extends Ali {
 
-    private final String siteUrl = "https://www.alipansou.com";
+    private final String siteUrl = "https://alipansou.com";
 
     private Map<String, String> getHeaders(String id) {
         HashMap<String, String> headers = new HashMap<>();
