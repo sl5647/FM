@@ -28,19 +28,17 @@ jobs:
          sed -i 's/gradle-7.4.2-all/gradle-7.5-bin/g' gradle/wrapper/gradle-wrapper.properties
          
          #添加仓外源
-         curl -L https://github.com/zhixc/CatVodTVSpider/raw/main/app/src/main/java/com/github/catvod/spider/Voflix.java > app/src/main/java/com/github/catvod/bean/Voflix.java
          #curl -L https://github.com/zhixc/CatVodTVSpider/raw/main/app/src/main/java/com/github/catvod/spider/Live2Vod.java > app/src/main/java/com/github/catvod/spider/Live2Vod.java         
          #sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Live2Vod.java
 
          
          #简体化阿里云盘
-         #sed -i 's/原畫/原画/g;s/普畫/普画/g' app/src/main/java/com/github/catvod/spider/Ali.java
-         #sed -i 's/原畫/原画/g;s/普畫/普画/g;s/阿里雲盤/阿里云盘/g' app/src/main/java/com/github/catvod/api/AliYun.java
+         sed -i 's/原畫/原画/g;s/普畫/普画/g' app/src/main/java/com/github/catvod/spider/Ali.java
+         sed -i 's/原畫/原画/g;s/普畫/普画/g;s/阿里雲盤/阿里云盘/g;s/來晚啦，該分享已失效。/来晚啦，该分享已失效！😭/g;s/請輸入Token/请输入Token/g;s/請使用阿里云盘 App 掃描二維碼/请使用阿里云盘 App 扫描二维码/g' app/src/main/java/com/github/catvod/api/AliYun.java
          #curl -L https://github.com/oiltea/CatVodSpider/raw/9ab5cc627be4096db11bca9ee9177c13014ddadd/app/src/main/java/com/github/catvod/spider/Wogg.java > app/src/main/java/com/github/catvod/spider/Wogg.java
          
          #
          #sed -i 's/https:\/\/s1.ax1x.com\/2023\/05\/04\/p9tgI81.png/http:\/\/image.coolapk.com\/feed\/2023\/0817\/10\/15491134_1b0929b1_9775_1639_274@512x512.png/g' app/src/main/java/com/github/catvod/utils/Image.java
-         rm -rf app/src/main/java/com/github/catvod/spider/WebDAV.java
          rm -rf app/src/main/java/com/github/catvod/spider/SP360.java
          rm -rf app/src/main/java/com/github/catvod/spider/AList.java
 
