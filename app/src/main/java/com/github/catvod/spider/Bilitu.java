@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
  */
 public class Bilitu extends Spider {
 
-    private final String siteURL = "https://www.bilituys.com";
+    private final String siteURL = "https://www.physkan.com";
 
     private final String userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36";
 
@@ -227,7 +227,7 @@ public class Bilitu extends Spider {
         // https://www..com/bilisch.html?wd=我
 
         // 第二页
-        // https://www.bilituys.com/bilisch/page/2/wd/我.html
+        // https://www.physkan.com/bilisch/page/2/wd/我.html
         String searchURL = siteURL + "/bilisch.html?wd=" + URLEncoder.encode(key);
         if (!pg.equals("1")) searchURL = siteURL + "/bilisch/page/" + pg + "/wd/" + URLEncoder.encode(key) + ".html";
         String html = OkHttp.string(searchURL, getHeader());
