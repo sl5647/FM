@@ -6,16 +6,20 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v4
-    - name: set up JDK
-      uses: actions/setup-java@v3.11.0
+    - uses: actions/checkout@v3
+    - name: set up JDK 11
+      uses: actions/setup-java@v3
       with:
-        java-version: '18'
-        distribution: 'temurin'
+        java-version: '11'
+        distribution: 'adopt'
+        cache: gradle
         
+    - name: Build with Gradle
+      run: ./build.bat ec
+      
     - name: Clone project
       run: |
         rm -rf project
@@ -42,9 +46,6 @@ jobs:
          #rm -rf app/src/main/java/com/github/catvod/spider/SP360.java
          #rm -rf app/src/main/java/com/github/catvod/spider/AList.java
          #rm -rf app/src/main/java/com/github/catvod/spider/AppYsV2.java
-
-    - name: Build with Gradle
-      run: ./build.bat ec
       
     - name: Build the app
       working-directory: ./project
