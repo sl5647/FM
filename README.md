@@ -13,3 +13,5 @@ https://github.com/mymine/CatVodTVSpider
 https://github.com/zhixc/CatVodTVSpider
 
 https://github.com/q215613905/TvJar-1
+
+https://github.com/fanmingming/live
