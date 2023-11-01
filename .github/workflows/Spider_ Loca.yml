@@ -28,7 +28,7 @@ jobs:
          sed -i 's/gradle-7.4.2-all/gradle-7.5-bin/g' gradle/wrapper/gradle-wrapper.properties
          
          #添加仓外源
-         curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Kuaikan.java > app/src/main/java/com/github/catvod/spider/Kuaikan.java
+         #curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Kuaikan.java > app/src/main/java/com/github/catvod/spider/Kuaikan.java
          curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Kunyu77.java > app/src/main/java/com/github/catvod/spider/Kunyu77.java
          #curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Ddys.java > app/src/main/java/com/github/catvod/spider/Ddys.java
          #curl -L https://github.com/zhixc/CatVodTVSpider/raw/main/app/src/main/java/com/github/catvod/spider/Live2Vod.java > app/src/main/java/com/github/catvod/spider/Live2Vod.java         
