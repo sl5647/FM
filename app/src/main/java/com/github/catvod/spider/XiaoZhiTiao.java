@@ -25,14 +25,14 @@ import java.util.Map;
  */
 public class XiaoZhiTiao extends Ali {
 
-    private static final String siteUrl = "https://ali.gitcafe.ink/tool/alipaper/";
+    private static final String siteUrl = "https://gitcafe.net/tool/alipaper/";
     private static final String aliUrl = "https://www.aliyundrive.com/s/";
     private String token;
     private Date date;
 
     private Map<String, String> getHeaders() {
         Map<String, String> params = new HashMap<>();
-        params.put("Host", "ali.gitcafe.ink");
+        params.put("Host", "gitcafe.net");
         params.put("User-Agent", Utils.CHROME);
         return params;
     }
