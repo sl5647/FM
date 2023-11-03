@@ -30,9 +30,8 @@ jobs:
          #curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/PushAgent.java > app/src/main/java/com/github/catvod/spider/PushAgent.java
          #添加AppYsV2
          curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/Kuaikan.java > app/src/main/java/com/github/catvod/spider/Kuaikan.java
-         curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/Auete.java > app/src/main/java/com/github/catvod/spider/Auete.java
-         curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/Xinsj.java > app/src/main/java/com/github/catvod/spider/Xinsj.java
-         #curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/YGP.java > app/src/main/java/com/github/catvod/spider/YGP.java
+         curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/YGP.java > app/src/main/java/com/github/catvod/spider/YGP.java
+         curl -L https://github.com/lh2513/Jun/raw/master/app/src/main/java/com/github/catvod/spider/AppYs.java > app/src/main/java/com/github/catvod/spider/AppYs.java
          #sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/AppYsV2.java
          #curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/AppYsV2.java > app/src/main/java/com/github/catvod/spider/AppYsV2.java
         
