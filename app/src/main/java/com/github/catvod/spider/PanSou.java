@@ -21,7 +21,7 @@ import java.util.Map;
  */
 public class PanSou extends Ali {
 
-    private final String siteUrl = "https://alipansou.com";
+    private final String siteUrl = "https://www.alipansou.com";
 
     private Map<String, String> getHeaders(String id) {
         HashMap<String, String> headers = new HashMap<>();
@@ -29,6 +29,12 @@ public class PanSou extends Ali {
         headers.put("Referer", siteUrl + id);
         headers.put("_bid", "6d14a5dd6c07980d9dc089a693805ad8");
         return headers;
+    }
+
+    private Map<String, String> getHeader() {
+        HashMap<String, String> header = new HashMap<>();
+        header.put("User-Agent", Utils.CHROME);
+        return header;
     }
 
     @Override
@@ -51,7 +57,7 @@ public class PanSou extends Ali {
 
     private String searchContent(String key, String pg) {
         String url = siteUrl + "/search?k=" + URLEncoder.encode(key) + "&page=" + pg + "&s=0&t=-1";
-        Elements items = Jsoup.parse(OkHttp.string(url)).select("van-row > a");
+        Elements items = Jsoup.parse(OkHttp.string(url, getHeader())).select("van-row > a");
         List<Vod> list = new ArrayList<>();
         for (Element item : items) {
             String title = item.selectFirst("template").text().trim();
