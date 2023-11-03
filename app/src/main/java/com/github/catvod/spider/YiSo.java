@@ -23,7 +23,7 @@ public class YiSo extends Ali {
         HashMap<String, String> headers = new HashMap<>();
         headers.put("User-Agent", "Mozilla/5.0 (Linux; Android 12; V2049A Build/SP1A.210812.003; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.129 Mobile Safari/537.36");
         headers.put("Referer", "https://yiso.fun/");
-        headers.put("Cookie", "satoken=2854cb58-3884-473b-84c4-34161f67a409");
+        headers.put("Cookie", "satoken=92e96924-a283-4db0-a866-3137ee3cca55");
         return headers;
     }
 
