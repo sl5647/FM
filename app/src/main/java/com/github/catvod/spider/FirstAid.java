@@ -4,7 +4,7 @@ import android.content.Context;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import com.github.catvod.crawler.Spider;
-import com.github.catvod.net.SSLSocketFactoryCompat;
+import com.github.catvod.net.SSLCompat;
 import okhttp3.Response;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -219,7 +219,7 @@ public class FirstAid extends Spider {
                 .build();
         OkHttpClient okHttpClient = new OkHttpClient()
                 .newBuilder()
-                .sslSocketFactory(new SSLSocketFactoryCompat(), SSLSocketFactoryCompat.trustAllCert) // 取消证书认证
+                .sslSocketFactory(new SSLCompat(), SSLCompat.trustAllCert) // 取消证书认证
                 .build();
         Response response = okHttpClient.newCall(request).execute();
         String content = response.body().string();
