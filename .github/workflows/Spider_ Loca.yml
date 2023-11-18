@@ -29,7 +29,6 @@ jobs:
          
          #添加仓外源
          #curl -L https://github.com/xxxyyy888/CatVodSpider/raw/main/app/src/main/java/com/github/catvod/spider/Ddys.java > app/src/main/java/com/github/catvod/spider/Ddys.java
-         curl -L https://github.com/mymine/CatVodTVSpider/raw/b14bdc78b29323b650aa8b9f2d823fe0f8527805/app/src/main/java/com/github/catvod/spider/Kuaikan.java > app/src/main/java/com/github/catvod/spider/Kuaikan.java         
          #sed -i 's/com.github.catvod.utils.okhttp.OkHttpUtil/com.github.catvod.net.OkHttp/g;s/OkHttpUtil/OkHttp/g' app/src/main/java/com/github/catvod/spider/Live2Vod.java
 
          
