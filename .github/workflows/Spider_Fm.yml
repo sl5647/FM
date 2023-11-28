@@ -31,8 +31,8 @@ jobs:
          #cp ../app/src/main/java/com/github/catvod/spider/JavDb.java app/src/main/java/com/github/catvod/spider/JavDb.java
 
          #添加豆瓣，6V，飘花磁力
-         #curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Init.java > app/src/main/java/com/github/catvod/spider/Init.java
-         #curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Proxy.java > app/src/main/java/com/github/catvod/spider/Proxy.java
+         curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Init.java > app/src/main/java/com/github/catvod/spider/Init.java
+         curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Proxy.java > app/src/main/java/com/github/catvod/spider/Proxy.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SixV.java > app/src/main/java/com/github/catvod/spider/SixV.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SP360.java > app/src/main/java/com/github/catvod/spider/SP360.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Nmys.java > app/src/main/java/com/github/catvod/spider/Nmys.java
@@ -58,6 +58,7 @@ jobs:
          #rm -rf app/src/main/java/com/github/catvod/spider/Local.java
          rm -rf app/src/main/java/com/github/catvod/spider/Miss.java
          rm -rf app/src/main/java/com/github/catvod/spider/Notice.java
+         rm -rf app/src/main/java/com/github/catvod/spider/Proxy.java
          rm -rf app/src/main/java/com/github/catvod/spider/Star.java
          rm -rf app/src/main/java/com/github/catvod/spider/WebDAV.java
          rm -rf app/src/main/java/com/github/catvod/spider/XPath.java
