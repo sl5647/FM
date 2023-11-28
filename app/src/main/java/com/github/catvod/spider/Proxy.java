@@ -20,10 +20,6 @@ public class Proxy extends Spider {
                 return MultiThread.proxy(params);
             case "ali":
                 return Ali.proxy(params);
-            case "bili":
-                return Bili.proxy(params);
-            case "webdav":
-                return WebDAV.vod(params);
             default:
                 return null;
         }
