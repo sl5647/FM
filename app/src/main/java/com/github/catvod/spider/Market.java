@@ -89,7 +89,7 @@ public class Market extends Spider {
             download(file, response.body().byteStream(), Double.parseDouble(response.header("Content-Length", "1")));
             if (file.getName().endsWith(".zip")) FileUtil.unzip(file, Path.download());
             if (file.getName().endsWith(".apk")) FileUtil.openFile(Path.chmod(file));
-            else Utils.notify("下載完成");
+            else Utils.notify("下载完成");
             checkCopy(url);
             dismiss();
         } catch (Exception e) {
