@@ -167,7 +167,7 @@ public class AliYun {
         param.addProperty("share_pwd", "");
         String json = post("v2/share_link/get_share_token", param);
         share = Share.objectFrom(json).setShareId(shareId).setTime();
-        if (share.getShareToken().isEmpty()) Utils.notify("來晚啦，該分享已失效。");
+        if (share.getShareToken().isEmpty()) Utils.notify("来晚啦，该分享已失效。");
     }
 
     private boolean refreshAccessToken() {
@@ -237,7 +237,7 @@ public class AliYun {
         List<Item> subs = new ArrayList<>();
         listFiles(shareId, new Item(getParentFileId(fileId, share)), files, subs);
         Collections.sort(files);
-        List<String> playFrom = Arrays.asList("原畫", "普畫", "極速");
+        List<String> playFrom = Arrays.asList("原画", "普画", "极速");
         List<String> episode = new ArrayList<>();
         List<String> playUrl = new ArrayList<>();
         for (Item file : files) episode.add(file.getDisplayName() + "$" + shareId + "+" + file.getFileId() + findSubs(file.getName(), subs));
@@ -249,7 +249,7 @@ public class AliYun {
         vod.setVodName(share.getShareName());
         vod.setVodPlayUrl(TextUtils.join("$$$", playUrl));
         vod.setVodPlayFrom(TextUtils.join("$$$", playFrom));
-        vod.setTypeName("阿里雲盤");
+        vod.setTypeName("阿里云盘");
         return vod;
     }
 
@@ -359,11 +359,11 @@ public class AliYun {
     }
 
     public String playerContent(String[] ids, String flag) {
-        if (flag.split("#")[0].equals("普畫")) {
+        if (flag.split("#")[0].equals("普画")) {
             return getPreviewContent(ids);
-        } else if (flag.split("#")[0].equals("原畫")) {
+        } else if (flag.split("#")[0].equals("原画")) {
             return Result.get().url(getDownloadUrl(ids[0], ids[1])).octet().subs(getSubs(ids)).header(getHeader()).string();
-        } else if (flag.split("#")[0].equals("極速")) {
+        } else if (flag.split("#")[0].equals("极速")) {
             return Result.get().url(MultiThread.url(getDownloadUrl(ids[0], ids[1]), 5)).octet().subs(getSubs(ids)).header(getHeader()).string();
         } else {
             return "";
@@ -442,7 +442,7 @@ public class AliYun {
             FrameLayout frame = new FrameLayout(Init.context());
             EditText input = new EditText(Init.context());
             frame.addView(input, params);
-            dialog = new AlertDialog.Builder(Init.getActivity()).setTitle("請輸入Token").setView(frame).setNeutralButton("QRCode", (dialog, which) -> onNeutral()).setNegativeButton(android.R.string.cancel, null).setPositiveButton(android.R.string.ok, (dialog, which) -> onPositive(input.getText().toString())).show();
+            dialog = new AlertDialog.Builder(Init.getActivity()).setTitle("请输入Token").setView(frame).setNeutralButton("QRCode", (dialog, which) -> onNeutral()).setNegativeButton(android.R.string.cancel, null).setPositiveButton(android.R.string.ok, (dialog, which) -> onPositive(input.getText().toString())).show();
         } catch (Exception ignored) {
         }
     }
@@ -491,7 +491,7 @@ public class AliYun {
             frame.addView(image, params);
             dialog = new AlertDialog.Builder(Init.getActivity()).setView(frame).setOnCancelListener(this::dismiss).setOnDismissListener(this::dismiss).show();
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            Utils.notify("請使用阿里雲盤 App 掃描二維碼");
+            Utils.notify("请使用阿里云盘 App 扫描二维码");
         } catch (Exception ignored) {
         }
     }
