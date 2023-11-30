@@ -54,7 +54,7 @@ public class Ali extends Spider {
      */
     public String detailContentVodPlayFrom(List<String> ids) {
         List<String> playFrom = new ArrayList<>();
-        if (ids.size() < 2) return TextUtils.join("$$$", Arrays.asList("原画", "普画", "极速"));
+        if (ids.size() < 2) return TextUtils.join("$$$", Arrays.asList("原画", "普画", "極速"));
         for (int i = 1; i <= ids.size(); i++) {
             playFrom.add(String.format(Locale.getDefault(), "原画#%02d", i));
             playFrom.add(String.format(Locale.getDefault(), "普画#%02d", i));
@@ -80,6 +80,7 @@ public class Ali extends Spider {
 
     public static Object[] proxy(Map<String, String> params) throws Exception {
         String type = params.get("type");
+        if ("video".equals(type)) return AliYun.get().proxyVideo(params);
         if ("sub".equals(type)) return AliYun.get().proxySub(params);
         if ("token".equals(type)) return AliYun.get().getToken();
         return null;
