@@ -631,7 +631,7 @@ public class AliYun {
             frame.addView(image, params);
             dialog = new AlertDialog.Builder(Init.getActivity()).setView(frame).setOnCancelListener(this::dismiss).setOnDismissListener(this::dismiss).show();
             dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            Utils.notify("请使用阿里云盘 App 扫描二维码");
+            Utils.notify("肥猫：请使用阿里云盘 App 扫描二维码");
         } catch (Exception ignored) {
         }
     }
