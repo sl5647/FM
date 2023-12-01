@@ -34,7 +34,7 @@ jobs:
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Init.java > app/src/main/java/com/github/catvod/spider/Init.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Proxy.java > app/src/main/java/com/github/catvod/spider/Proxy.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SixV.java > app/src/main/java/com/github/catvod/spider/SixV.java
-         curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SP360.java > app/src/main/java/com/github/catvod/spider/SP360.java
+         #curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/SP360.java > app/src/main/java/com/github/catvod/spider/SP360.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Nmys.java > app/src/main/java/com/github/catvod/spider/Nmys.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Voflix.java > app/src/main/java/com/github/catvod/spider/Voflix.java
          curl -L https://github.com/lh2513/FM/raw/main/app/src/main/java/com/github/catvod/spider/Jianpian.java > app/src/main/java/com/github/catvod/spider/Jianpian.java
@@ -48,7 +48,7 @@ jobs:
          
          #
          #sed -i 's/https:\/\/s1.ax1x.com\/2023\/05\/04\/p9tgI81.png/http:\/\/image.coolapk.com\/feed\/2023\/0817\/10\/15491134_1b0929b1_9775_1639_274@512x512.png/g' app/src/main/java/com/github/catvod/utils/Image.java
-         #rm -rf app/src/main/java/com/github/catvod/spider/AList.java
+         rm -rf app/src/main/java/com/github/catvod/spider/AList.java
          #rm -rf app/src/main/java/com/github/catvod/spider/AppYsV2.java
          rm -rf app/src/main/java/com/github/catvod/spider/Bili.java
          rm -rf app/src/main/java/com/github/catvod/spider/Doll.java  
@@ -56,7 +56,7 @@ jobs:
          rm -rf app/src/main/java/com/github/catvod/spider/Hanime.java
          rm -rf app/src/main/java/com/github/catvod/spider/JSDemo.java
          rm -rf app/src/main/java/com/github/catvod/spider/Jable.java         
-         #rm -rf app/src/main/java/com/github/catvod/spider/Local.java
+         rm -rf app/src/main/java/com/github/catvod/spider/Local.java
          rm -rf app/src/main/java/com/github/catvod/spider/Miss.java
          rm -rf app/src/main/java/com/github/catvod/spider/Notice.java
          rm -rf app/src/main/java/com/github/catvod/spider/Star.java
